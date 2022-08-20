@@ -13,5 +13,5 @@ The first version of this code is copied from
 - (Newman and Barkema, 1999) - Monte Carlo methods in statistical physics
 
 ## To do 
-- [] Anti-ferromagnetic Ising model in 3D.
-- [] Modified Ising model with singlet. 
+- [ ] Anti-ferromagnetic Ising model in 3D.
+- [ ] Modified Ising model with singlet. 
