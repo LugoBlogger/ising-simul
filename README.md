@@ -13,5 +13,7 @@ The first version of this code is copied from
 - (Newman and Barkema, 1999) - Monte Carlo methods in statistical physics
 
 ## To do 
-- [ ] Anti-ferromagnetic Ising model in 3D.
+- [x] Anti-ferromagnetic Ising model in 3D.
 - [ ] Modified Ising model with singlet. 
+- [ ] Update README.md with demonstation of running script
+- [ ] Modified Ising model with different $J$. There are two exchange interaction: $J$ and $J_3$. The exchange interaction $J_3$ is used to model doping of holes in p-orbital.
