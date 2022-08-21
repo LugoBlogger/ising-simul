@@ -151,6 +151,7 @@ function simulate_IsingModel(Tf, J, Tc, Tmin, Tmax, kb, kbT, N, L, L_avg, ...
       end
     end
 
+    % -- update ising plot
     imagesc(ax_ising, x_config_spin, [-1, 1]);
     axis(ax_ising, 'equal', 'off');
     title(ax_ising, sprintf('k_BT=%.1f;  samples=(%d/%d)', kbT, mod(q, L)+1, L));
@@ -161,8 +162,8 @@ function simulate_IsingModel(Tf, J, Tc, Tmin, Tmax, kb, kbT, N, L, L_avg, ...
     
 
     % -- update magnetization_arr (staggered magnetization)
-    spinSum_each_state = get_spinSum_staggered(x_config_spin, N);
-    spinSum_arr = [spinSum_arr(2:end);  spinSum_each_state/(N^2)];  % First In First Out
+    spinSum_each_state = get_spinSum_staggered(x_config_spin, N)/(N^2);
+    spinSum_arr = [spinSum_arr(2:end);  spinSum_each_state];  % First In First Out
 
     
     % -- update data in ax_magnetization
